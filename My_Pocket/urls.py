@@ -30,5 +30,4 @@ route.register(r'Receitas', mainviewsets.ReceitasViewSet, basename="Receitas")
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api', include(route.urls)),
-    path('',include('pages.urls', namespace = 'pages')),
 ]
